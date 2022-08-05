@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Bookshop Starter</title>
+
+    <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
+    {{ $bookshop_scss_files := partial "bookshop_scss" . }}
+    <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
+    {{ $scss := $bookshop_scss_files | resources.Concat "css/bookshop.css" | resources.ToCSS | resources.Minify |
+    resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $scss.Permalink }}">
+</head>
+
+<body>
+    <header>
+        <h1><img src="/uploads/share-logo.svg" alt="Demo Org"></h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/documentation/">Documentation</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        <p>© 2022 Share App.</p>
+    </footer>
+</body>
+
+</html>
