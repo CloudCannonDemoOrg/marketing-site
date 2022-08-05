@@ -1,5 +1,6 @@
 collections_config:
   pages:
+    new_preview_url: /
     _enabled_editors:
       - visual
       - data
