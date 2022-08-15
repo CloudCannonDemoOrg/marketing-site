@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: About
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
@@ -20,7 +21,7 @@ sections:
       content_width: Large
   - _bookshop_name: cloudcannon/structural/spacer
     style:
-      height: 160
+      height: 200
   - _bookshop_name: cloudcannon/sections/faq
     content:
       heading: Frequently asked questions
@@ -105,5 +106,5 @@ sections:
       background_color: '#f5f5f5'
   - _bookshop_name: cloudcannon/structural/spacer
     style:
-      height: 200
+      height: 160
 ---
