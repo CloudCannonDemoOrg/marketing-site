@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Home
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
@@ -15,7 +16,7 @@ sections:
             heading_level: h1
             text_color: Primary
           content:
-            text: Forget about the bill and live in the moment.
+            text: Forget about the bill
         - _bookshop_name: cloudcannon/simple/button
           style:
             type: Primary
