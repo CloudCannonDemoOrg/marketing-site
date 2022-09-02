@@ -197,7 +197,7 @@ sections:
             quote: >-
               Orci varius natoque penatibus et magnis dis parturient montes,
               nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada
-              enim. Donec aliquet at lectus eget accumsan.
+              enim. Donec aliquet at lectus eget accumsan!
             source: Quote source
             image: /uploads/quote-source.png
           style:
