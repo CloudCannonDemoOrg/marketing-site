@@ -15,15 +15,7 @@ sections:
             text:
               _bookshop_name: cloudcannon/simple/paragraph
               content:
-                text: >-
-                  Duis accumsan mauris dui, a eleifend massa maximus eu. Aliquam
-                  a rhoncus dolor. In enim lectus, cursus sed auctor gravida,
-                  gravida nec justo. Quisque lacinia, lectus eget efficitur
-                  commodo, magna nulla efficitur elit, eget lacinia ligula quam
-                  at ligula. Orci varius natoque penatibus et magnis dis
-                  parturient montes, nascetur ridiculus mus. Mauris sed tempus
-                  odio, vel malesuada enim. Donec aliquet at lectus eget
-                  accumsan
+                text: Hello\!
           style:
             content_width: Full
             content_alignment: Center

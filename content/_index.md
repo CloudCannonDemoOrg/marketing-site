@@ -13,7 +13,7 @@ sections:
       blocks:
         - _bookshop_name: cloudcannon/simple/headline
           style:
-            heading_level: h1
+            heading_level: h2
             text_color: Primary
           content:
             text: Forget about the bill
@@ -38,6 +38,117 @@ sections:
       background_overlay:
         gradient_type: Linear
         color: rgba(0, 0, 0, 0.25)
+  - _bookshop_name: cloudcannon/sections/two-columns
+    content:
+      left_column:
+        style:
+          content_alignment: Center
+          vertical_alignment: Top
+          custom_background_color: true
+          background_color: '#f8f8f8'
+        content:
+          blocks:
+            - _bookshop_name: cloudcannon/simple/headline
+              content:
+                text: Track the balance
+              style:
+                heading_level: h3
+                text_color: Primary
+            - _bookshop_name: cloudcannon/simple/paragraph
+              content:
+                text: With Share, you can easily track who owes who\!
+            - _bookshop_name: cloudcannon/image
+              content:
+                path: /uploads/owings.png
+                alt: Alt tag
+              style:
+                shadow: false
+      right_column:
+        style:
+          content_alignment: Left
+          vertical_alignment: Middle
+          custom_background_color: true
+          background_color: '#fcf4f4'
+        content:
+          blocks:
+            - _bookshop_name: cloudcannon/quote
+              content:
+                quote: This is the best app ever
+                source: Someone smart
+                image: /uploads/quote-source.png
+              style:
+                content_alignment: Center
+    style:
+      gap: 40
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 100
+  - _bookshop_name: cloudcannon/sections/one-column
+    content:
+      blocks:
+        - _bookshop_name: cloudcannon/simple/headline
+          content:
+            text: Contact Us
+          style:
+            heading_level: h2
+            text_color: Primary
+        - _bookshop_name: cloudcannon/structural/spacer
+          style:
+            height: 40
+        - _bookshop_name: cloudcannon/form
+          content:
+            submit_url: mailto:christopher@cloudcannon.com?subject=Contact%20us%20form
+            inputs:
+              - _bookshop_name: cloudcannon/simple/input
+                content:
+                  label: Name
+                  placeholder: Add your name
+                  default_value:
+                  name:
+                style:
+                  input_type: text
+                  is_required: true
+              - _bookshop_name: cloudcannon/simple/input
+                content:
+                  label: E-mail
+                  placeholder: Add your e-mail
+                  default_value:
+                  name:
+                style:
+                  input_type: email
+                  is_required: true
+              - _bookshop_name: cloudcannon/simple/input
+                content:
+                  label: Company
+                  placeholder: Name of your company
+                  default_value:
+                  name:
+                style:
+                  input_type: text
+                  is_required: true
+          style:
+            content_width: Full
+            content_alignment: Center
+        - _bookshop_name: cloudcannon/structural/spacer
+          style:
+            height: 40
+        - _bookshop_name: cloudcannon/simple/button
+          content:
+            text: Submit
+            url: mailto:christopher@cloudcannon.com?subject=Contact%20us%20form
+            open_in_new_tab: false
+          style:
+            type: Primary
+            size: Responsive
+            disabled: false
+    style:
+      custom_background_color: false
+      background_color: '#f5f5f5'
+      content_alignment: Center
+      content_width: Medium
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 173
   - _bookshop_name: cloudcannon/sections/hero-image
     content:
       path: /uploads/hero.png
@@ -48,26 +159,6 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
-  - _bookshop_name: cloudcannon/sections/logo-ticker
-    content:
-      logos:
-        - image: /uploads/fordes.png
-          alt: Fordes logo
-          link: /
-        - image: /uploads/fifetracker.png
-          alt: Fifetracker logo
-          link: /
-        - image: /uploads/ccc.svg
-          alt: CCC logo
-          link: /
-        - image: /uploads/thyme.svg
-          alt: Thyme logo
-          link: /
-    style:
-      height: 45
-  - _bookshop_name: cloudcannon/structural/spacer
-    style:
-      height: 120
   - _bookshop_name: cloudcannon/sections/two-columns
     content:
       left_column:
@@ -122,6 +213,26 @@ sections:
           background_color: '#f5f5f5'
     style:
       gap: 40
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 120
+  - _bookshop_name: cloudcannon/sections/logo-ticker
+    content:
+      logos:
+        - image: /uploads/fordes.png
+          alt: Fordes logo
+          link: /
+        - image: /uploads/fifetracker.png
+          alt: Fifetracker logo
+          link: /
+        - image: /uploads/ccc.svg
+          alt: CCC logo
+          link: /
+        - image: /uploads/thyme.svg
+          alt: Thyme logo
+          link: /
+    style:
+      height: 45
   - _bookshop_name: cloudcannon/sections/custom
     section_name: My section
     include_background_color: true
@@ -176,7 +287,7 @@ sections:
             text_color: Primary
         - _bookshop_name: cloudcannon/structural/spacer
           style:
-            height: 80
+            height: 40
         - _bookshop_name: cloudcannon/embed
           content:
             url: >-
