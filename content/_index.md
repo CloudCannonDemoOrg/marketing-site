@@ -41,9 +41,6 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 100
-  - _bookshop_name: cloudcannon/structural/spacer
-    style:
-      height: 173
   - _bookshop_name: cloudcannon/sections/hero-image
     content:
       path: /uploads/hero.png
