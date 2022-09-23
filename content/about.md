@@ -11,7 +11,7 @@ sections:
       items:
         - _bookshop_name: cloudcannon/accordion
           content:
-            heading: What is a group????
+            heading: What is a group?
             text:
               _bookshop_name: cloudcannon/simple/paragraph
               content:
