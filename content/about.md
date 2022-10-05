@@ -1,26 +1,10 @@
 ---
+_schema: default
 title: About
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 180
-  - _bookshop_name: cloudcannon/sections/one-column
-    content:
-      blocks:
-        - _bookshop_name: cloudcannon/simple/headline
-          content:
-            text: Who are we?
-          style:
-            heading_level: h2
-            text_color: Primary
-    style:
-      custom_background_color: false
-      background_color: '#f5f5f5'
-      content_alignment: Center
-      content_width: Large
-  - _bookshop_name: cloudcannon/structural/spacer
-    style:
-      height: 160
   - _bookshop_name: cloudcannon/sections/faq
     content:
       heading: Frequently asked questions
@@ -31,15 +15,7 @@ sections:
             text:
               _bookshop_name: cloudcannon/simple/paragraph
               content:
-                text: >-
-                  Duis accumsan mauris dui, a eleifend massa maximus eu. Aliquam
-                  a rhoncus dolor. In enim lectus, cursus sed auctor gravida,
-                  gravida nec justo. Quisque lacinia, lectus eget efficitur
-                  commodo, magna nulla efficitur elit, eget lacinia ligula quam
-                  at ligula. Orci varius natoque penatibus et magnis dis
-                  parturient montes, nascetur ridiculus mus. Mauris sed tempus
-                  odio, vel malesuada enim. Donec aliquet at lectus eget
-                  accumsan
+                text: Hello\!
           style:
             content_width: Full
             content_alignment: Center
@@ -106,4 +82,21 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
+  - _bookshop_name: cloudcannon/sections/one-column
+    content:
+      blocks:
+        - _bookshop_name: cloudcannon/simple/headline
+          content:
+            text: Who are we?
+          style:
+            heading_level: h2
+            text_color: Primary
+    style:
+      custom_background_color: false
+      background_color: '#f5f5f5'
+      content_alignment: Center
+      content_width: Large
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 160
 ---

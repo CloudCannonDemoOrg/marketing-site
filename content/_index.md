@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Home
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
@@ -15,10 +16,10 @@ sections:
             heading_level: h1
             text_color: Primary
           content:
-            text: Forget about the bill and live in the moment.
+            text: Forget about the bill
         - _bookshop_name: cloudcannon/simple/button
           style:
-            type: Primary
+            type: Secondary
             size: Responsive
             disabled: false
           content:
@@ -29,14 +30,65 @@ sections:
       content_width: Medium
       content_alignment: Center
       vertical_alignment: Middle
-      include_background_color: false
-      background_color: '#F0F0F0'
+      include_background_color: true
+      background_color: '#fafafa'
       include_background_image: false
       background_image_path: /uploads/hero.png
       include_background_overlay: false
       background_overlay:
         gradient_type: Linear
         color: rgba(0, 0, 0, 0.25)
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 100
+  - _bookshop_name: cloudcannon/sections/two-columns
+    content:
+      left_column:
+        style:
+          content_alignment: Center
+          vertical_alignment: Top
+          custom_background_color: true
+          background_color: '#fff9f9'
+        content:
+          blocks:
+            - _bookshop_name: cloudcannon/simple/headline
+              content:
+                text: Track the Balance
+              style:
+                heading_level: h3
+                text_color: Primary
+            - _bookshop_name: cloudcannon/simple/paragraph
+              content:
+                text: With Share, you can easily track who owes who\!
+            - _bookshop_name: cloudcannon/image
+              content:
+                path: /uploads/owings.png
+                alt: Image showing balance
+              style:
+                shadow: false
+      right_column:
+        style:
+          content_alignment: Left
+          vertical_alignment: Middle
+          custom_background_color: false
+          background_color: '#c3e6c8'
+        content:
+          blocks:
+            - _bookshop_name: cloudcannon/quote
+              content:
+                quote: This is the best app ever!
+                source: Someone smart
+                image: /uploads/quote-source.png
+              style:
+                content_alignment: Center
+    style:
+      gap: 40
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 120
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 100
   - _bookshop_name: cloudcannon/sections/hero-image
     content:
       path: /uploads/hero.png
@@ -47,26 +99,6 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
-  - _bookshop_name: cloudcannon/sections/logo-ticker
-    content:
-      logos:
-        - image: /uploads/fordes.png
-          alt: Fordes logo
-          link: /
-        - image: /uploads/fifetracker.png
-          alt: Fifetracker logo
-          link: /
-        - image: /uploads/ccc.svg
-          alt: CCC logo
-          link: /
-        - image: /uploads/thyme.svg
-          alt: Thyme logo
-          link: /
-    style:
-      height: 45
-  - _bookshop_name: cloudcannon/structural/spacer
-    style:
-      height: 120
   - _bookshop_name: cloudcannon/sections/two-columns
     content:
       left_column:
@@ -121,6 +153,26 @@ sections:
           background_color: '#f5f5f5'
     style:
       gap: 40
+  - _bookshop_name: cloudcannon/structural/spacer
+    style:
+      height: 120
+  - _bookshop_name: cloudcannon/sections/logo-ticker
+    content:
+      logos:
+        - image: /uploads/fordes.png
+          alt: Fordes logo
+          link: /
+        - image: /uploads/fifetracker.png
+          alt: Fifetracker logo
+          link: /
+        - image: /uploads/ccc.svg
+          alt: CCC logo
+          link: /
+        - image: /uploads/thyme.svg
+          alt: Thyme logo
+          link: /
+    style:
+      height: 45
   - _bookshop_name: cloudcannon/sections/custom
     section_name: My section
     include_background_color: true
@@ -175,7 +227,7 @@ sections:
             text_color: Primary
         - _bookshop_name: cloudcannon/structural/spacer
           style:
-            height: 80
+            height: 40
         - _bookshop_name: cloudcannon/embed
           content:
             url: >-
